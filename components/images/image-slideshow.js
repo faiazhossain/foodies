@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
-
 import burgerImg from "@/assets/burger.jpg";
 import curryImg from "@/assets/curry.jpg";
 import dumplingsImg from "@/assets/dumplings.jpg";
@@ -29,7 +28,6 @@ export default function ImageSlideshow() {
         prevIndex < images.length - 1 ? prevIndex + 1 : 0
       );
     }, 5000);
-
     return () => clearInterval(interval);
   }, []);
 
